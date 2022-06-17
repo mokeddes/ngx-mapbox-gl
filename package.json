@@ -16,7 +16,8 @@
     "update-version": "./update_version.sh",
     "prettier": "prettier --config ./.prettierrc --write \"projects/**/*{.ts,.js,.json,.css,.scss}\"",
     "commit": "git-cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "npm run build"
   },
   "standard-version": {
     "scripts": {
